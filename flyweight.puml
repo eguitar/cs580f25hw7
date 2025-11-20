@@ -1,0 +1,44 @@
+@startuml
+
+class Character {
+    - char character
+    - CharacterProperties characterProperty
+    + Character(char, CharacterProperties)
+    + setCharacter(char)
+    + setCharacterProperty(CharacterProperties)
+    + getCharacter(): char
+    + getFont(): String
+    + getColor(): String
+    + getSize(): int
+}
+
+class CharacterProperties {
+    - final String font
+    - final String color
+    - final int size
+    + CharacterProperties(String, String, int)
+    + getFont(): String
+    + getColor(): String
+    + getSize(): int
+}
+
+class CharacterPropertiesFactory {
+    - Map<String, CharacterProperties> flyweights
+    + setAndRetrieveFlyweightCharacterProperties(String, String, int): CharacterProperties
+    + sizeOfMap(): int
+}
+
+class Document {
+    - List<Character> characters
+    - CharacterPropertiesFactory propertiesFactory
+    + addCharacter(char, String, String, int)
+    + editCharacterProperties(int, String, String, int)
+    + saveToFile(String)
+    + loadFromFile(String)
+}
+
+Character --> CharacterProperties : uses (1)
+Document "1" *-- "*" Character : contains
+Document "1" *-- "1" CharacterPropertiesFactory : has
+
+@enduml

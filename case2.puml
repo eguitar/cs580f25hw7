@@ -1,0 +1,85 @@
+@startuml
+object Document {
+  characters = [H, e, l, l, o, W, o, r, l, d, C, S, 5, 8, 0, 0]
+}
+
+object H {
+  character = 'H'
+  characterProperty = Calibri-Blue-99
+}
+
+object e {
+  character = 'e'
+  characterProperty = Arial-Black-14
+}
+
+object l1 {
+  character = 'l'
+  characterProperty = Arial-Black-14
+}
+
+object l2 {
+  character = 'l'
+  characterProperty = Arial-Black-14
+}
+
+object o1 {
+  character = 'o'
+  characterProperty = Arial-Black-14
+}
+
+object W {
+  character = 'W'
+  characterProperty = Calibri-Blue-99
+}
+
+object o2 {
+  character = 'o'
+  characterProperty = Arial-Black-14
+}
+
+object r {
+  character = 'r'
+  characterProperty = Arial-Black-14
+}
+
+object l3 {
+  character = 'l'
+  characterProperty = Arial-Black-14
+}
+
+object d {
+  character = 'd'
+  characterProperty = Arial-Black-14
+}
+
+object C {
+  character = 'C'
+  characterProperty = Verdana-Blue-18
+}
+
+object S {
+  character = 'S'
+  characterProperty = Verdana-Blue-18
+}
+
+object 5 {
+  character = '5'
+  characterProperty = Verdana-Red-12
+}
+
+object 8 {
+  character = '8'
+  characterProperty = Verdana-Red-12
+}
+
+object 0a {
+  character = '0'
+  characterProperty = Verdana-Red-12
+}
+
+object 0b {
+  character = '0'
+  characterProperty = Verdana-Red-12
+}
+@enduml
